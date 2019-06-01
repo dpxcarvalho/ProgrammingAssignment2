@@ -25,7 +25,7 @@ makeCacheMatrix <- function(x = numeric()) {
 ## (and the matrix has not changed), then the cacheSolve function should
 ## retrieve the inverse from the cache
 
-cachesolve <- function(x, ...) {
+cacheSolve <- function(x, ...) {
         m <- x$getsolve()
         if(!is.null(m)) {
                 message("getting cached data")
@@ -55,8 +55,15 @@ cachesolve <- function(x, ...) {
 # [1,]    4    7
 # [2,]    2    6
 # > b <- makeCacheMatrix(a)
-# > c <- cachesolve(b)
+# > c <- cacheSolve(b)
 # > c
 # [,1] [,2]
+# [1,]  0.6 -0.7
+# [2,] -0.2  0.4
+
+# Line command to evaluat peers at once:
+# >a<-matrix(c(4,2,7,6),2,2);b<-makeCacheMatrix(a);c<-cacheSolve(b);c
+# Answer should be:
+#     [,1] [,2]
 # [1,]  0.6 -0.7
 # [2,] -0.2  0.4
