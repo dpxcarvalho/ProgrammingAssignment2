@@ -1,7 +1,7 @@
 ## R Programming Course - Week 3 - Assignment#2
 ## Student Daniel Peixoto de Carvalho
-## Created in 29 May 2019
-## Last updated in 1 Jun 2019
+## Created on 29 May 2019
+## Last updated on 1 Jun 2019
 
 ## The function makeCacheMatrix creates a special "matrix" object 
 ## that can cache its inverse
